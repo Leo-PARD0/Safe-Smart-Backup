@@ -1,0 +1,47 @@
+Perguntas e Respostas — Fundamentos do Projeto
+Este documento registra as perguntas iniciais que orientam o projeto, as respostas fornecidas pelo idealizador e as próximas questões que precisam ser respondidas antes da consolidação da arquitetura e do escopo final.
+
+Perguntas Respondidas
+1. Quem é o usuário-alvo e qual problema principal o programa resolve?
+Resposta:
+O programa é voltado para qualquer pessoa que enxerga a formatação do Windows como algo complexo e assustador. Seu público inclui usuários leigos que veem o computador como um depósito de arquivos e não possuem um inventário mental do que está instalado ou onde seus dados estão.
+
+A ferramenta deve oferecer funcionalidades principais de forma gratuita e também facilitar a migração de dados entre computadores, como em casos de compra de um novo aparelho.
+
+2. Qual dor real o usuário sente hoje?
+Resposta:
+O usuário não tem clareza sobre o que existe em seu computador. Quando surge a necessidade de formatar ou migrar para outro dispositivo, surge também o medo de perder dados e o incômodo do tempo necessário para “deixar tudo pronto novamente”.
+
+O objetivo do programa é reduzir esse esforço, oferecendo um método simples e visual para selecionar arquivos pessoais e programas que serão levados na mudança.
+
+3. Qual é o requisito inegociável do sistema?
+Resposta:
+O programa nunca pode perder ou corromper dados silenciosamente. Se um backup for concluído, os dados precisam estar íntegros e reconhecíveis.
+
+Caso haja corrupção, falha de cópia ou inconsistência, o sistema não pode afirmar que o backup foi bem-sucedido nem permitir que o usuário siga acreditando que seus dados estão seguros.
+
+Perguntas que Ainda Precisam Ser Respondidas
+As questões abaixo são fundamentais para orientar decisões técnicas, de UX e de escopo. Elas não precisam ser respondidas todas de uma vez, mas precisam ser endereçadas antes da versão funcional inicial.
+
+Produto e Escopo
+O foco inicial será backup local, externo, rede, nuvem ou híbrido?
+O programa deve funcionar offline?
+Existe um limite claro entre o que será automático e o que exigirá confirmação explícita do usuário?
+Experiência do Usuário
+Qual o nível máximo de informação técnica que pode ser exibido sem gerar confusão?
+Como o sistema deve explicar falhas sem gerar pânico?
+O usuário deve ser guiado por um fluxo passo a passo ou por um painel livre?
+Dados e Risco
+Como o programa valida a integridade dos dados copiados?
+O que define oficialmente um “backup bem-sucedido”?
+Como lidar com arquivos em uso ou serviços ativos?
+Programas e Sistema
+Até onde o programa deve mapear dependências de software?
+Ele apenas lista programas ou tenta reinstalá-los automaticamente?
+Como tratar softwares portáteis, cracks ou instalações fora do padrão?
+Distribuição e Evolução
+O projeto será open-source ou híbrido?
+Qual será o modelo de manutenção e atualização?
+Como evitar que o programa se torne obsoleto com mudanças do Windows?
+Observação
+Este documento não define respostas finais. Ele existe para registrar decisões, dúvidas e direcionamentos, funcionando como memória conceitual do projeto ao longo de sua evolução.
